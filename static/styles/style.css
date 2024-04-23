@@ -1,0 +1,340 @@
+@import "header.css";
+@import "about_us.css";
+@import "advantages.css";
+@import "services.css";
+@import "works.css";
+@import "why92.css";
+@import "contact_us.css";
+@import "footer.css";
+/* @import "adaptive.css"; */
+@import "preloader.css";
+/* svg path {
+  stroke:inherit;
+  stroke-width:inherit;
+  fill:inherit;
+  } */
+:root {
+    --content-area-width: 90vw;
+    --container-margin-top: 100px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+#video-detach-button{
+  display: none;
+}
+
+html > div[style] {
+  display: none !important;
+} 
+
+html {
+  
+  scroll-behavior: smooth;
+}
+body + div[is-visible] {display: none !important;}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    height: auto;
+  }
+  button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    /* отображаем курсор в виде руки при наведении; некоторые
+    считают, что необходимо оставлять стрелочный вид для кнопок */
+    cursor: pointer;
+  }
+
+.screen_area {
+    overflow: hidden;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+
+
+
+.wave{
+    position: relative;
+    z-index: 0;
+    width: 100vw;
+}
+
+.button-compas{
+  position: relative;
+  margin: 1vw 47vw;
+  transition: all 0.1s linear;
+  width: 7.39vw;
+}
+
+.clicked{
+  transform: scale(0.9);
+}
+
+.button-compas svg{
+  height: 7.39vw;
+  width: 7.39vw;
+}
+
+stop{
+  transition:all .1s linear;
+}
+
+.compas-href:hover stop:nth-child(1){
+  stop-color: #004460;
+}
+
+.compas-href:hover stop:nth-child(2){
+  stop-color: #8731E0;
+}   
+
+.compas-href:hover stop:nth-child(3){
+  stop-color: #FFDDF1;
+}
+
+
+
+.circle__text{
+  position: absolute;
+  border-radius: 50%;
+  height: 7.39vw;
+  width: 7.39vw;
+  animation: 35s linear 1s normal none infinite running circle;
+  -webkit-animation: 42s linear 1s normal none infinite running circle;
+  z-index: -1;
+}
+
+.black_circle_text{
+  color: #000;
+}
+
+.button__blick{
+  position: absolute;
+  height: 7.39vw;
+  width: 7.39vw;
+  border-radius: 50%;
+  background: rgb(97, 218, 251);
+  filter: blur(2.08vw);
+  z-index: -2;
+  transform: scale(1.2);
+  transition: all 0.1s linear;
+}
+
+.hovered{
+  transform: scale(1.4);
+}
+
+.circle__word{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cirle_letter {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  width: 0;
+  transform-origin: 0 100%;
+  padding-bottom: 3.9vw;
+  font-size: 0.6vw;
+}
+
+.section_title {
+    position: relative;
+    font-weight: 700;
+    font-size: 34px;
+}
+
+.section_subtitle {
+    position: relative;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.blue_text {
+    color: #46B3E5;
+}
+
+@keyframes circle {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes circle {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes rev-circle {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  @-webkit-keyframes rev-circle {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+
+  @keyframes up-down {
+    0%{
+      transform: translate(0, -1.6vw);
+      
+    }
+    50% {
+      transform: translate(0);
+    }
+
+    100% {
+      transform: translate(0, -1.6vw);
+    }
+  }
+  @-webkit-keyframes up-down {
+    0%{
+      transform: translate(0, -1.6vw);
+      
+    }
+    50% {
+      transform: translate(0);
+    }
+
+    100% {
+      transform: translate(0, -1.6vw);
+    }
+  }
+
+@media screen and (max-width: 1024px) {
+  .wave{
+    width: 180vw;
+  }
+
+.button-compas{
+  margin: 1vw 47vw;
+  width: 13.3vw;
+}
+
+.button-compas svg{
+  height: 13.3vw;
+  width: 13.3vw;
+}
+
+.circle__text{
+  height: 13.3vw;
+  width: 13.3vw;
+}
+
+
+.button__blick{
+  height: 13.3vw;
+  width: 13.3vw;
+  filter: blur(3.74vw);
+}
+
+.cirle_letter {
+  padding-bottom: 7.02vw;
+  font-size: 1.08vw;
+}
+}
+
+@media screen and (max-width: 768px) {
+  .wave{
+    width: 180vw;
+  }
+
+.button-compas{
+  margin: 6vw 47vw;
+  width: 17.29vw;
+}
+
+.button-compas svg{
+  height: 17.29vw;
+  width: 17.29vw;
+}
+
+.circle__text{
+  height: 17.29vw;
+  width: 17.29vw;
+}
+
+
+.button__blick{
+  height: 17.29vw;
+  width: 17.29vw;
+  filter: blur(4.86vw);
+}
+
+.cirle_letter {
+  padding-bottom: 9.12vw;
+  font-size: 1.4vw;
+}
+}
+
+@media screen and (max-width: 520px) {
+  .wave{
+    width: 180vw;
+  }
+
+.button-compas{
+  margin: 6vw 37vw;
+  width: 22.47vw;
+}
+
+.button-compas svg{
+  height: 22.47vw;
+  width: 22.47vw;
+}
+
+.circle__text{
+  height: 22.47vw;
+  width: 22.47vw;
+}
+
+
+.button__blick{
+  height: 22.47vw;
+  width: 22.47vw;
+  filter: blur(6.31vw);
+}
+
+.cirle_letter {
+  padding-bottom: 11.85vw;
+  font-size: 2.42vw;
+}
+}

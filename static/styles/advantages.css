@@ -1,0 +1,360 @@
+
+.advantages_container{
+    position: relative;
+    z-index: -1;
+    background: linear-gradient(rgba(42, 13, 130, 1) 1.04%,rgba(35, 8, 79, 1) 42.53%,rgba(8, 5, 43, 1) 100%);
+}
+
+
+
+.advantages_content{
+    color: #ffff;
+    position: relative;
+    z-index: 7;
+    padding-left: 12.6vw;
+   
+}
+
+.advantages-parallax {
+    position: absolute;
+    z-index: -1;
+    width: 130%;
+    height: 100%;
+    top: 0;
+    left: -30%;
+    background: url('../img/Advantages/ImportantBg.png') 100% 0% / auto 100% no-repeat;
+}
+
+.advantages_topSec{
+    padding: 2.6vw 0;
+}
+
+.advantages_title{
+    width:20.3vw;
+    font-weight: 700;
+    font-size: 2.3vw;
+    line-height: 145.9%;
+    margin-top: 2.6vw;
+}
+
+.advantages_subtitle{
+    margin-top: 1.4vw;
+    font-size: 1.3vw;
+    opacity: 0.6;
+}
+.advantages_flex_content{
+    display: flex;
+    max-width: 100vw;
+    justify-content: space-between;
+}
+
+.advantages_list{
+    max-width: 16.7vw;
+    margin-top: 7.8vw;
+}
+
+.advantages_list ol{
+    list-style: none;
+    counter-reset: ol-numbers;
+}
+
+.advantages_list ol li{
+    position: relative;
+    margin-bottom: 10.4vw;
+
+}
+
+.advantages_list ol li:nth-child(3){
+    margin-bottom: 0px;
+}
+
+.advantages_list ol li::before{
+    counter-increment: ol-numbers;
+    content: counter(ol-numbers);
+    position: absolute;
+    color: #43B6E4;
+    font-weight: 500;
+    font-size: 7.8vw;
+    z-index: -1;
+    top: -8.6vw;
+    left: -3.4vw;
+    opacity: 0.5;
+}
+
+.advantages_list ol li::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -2.6vw;
+    left: -2.6vw;
+    border-radius: 50%;
+    width: 6.8vw;
+    height: 6.8vw;
+    background: #2D1085;
+    box-shadow: 0px 0px 1.5vw #2D1185, 4.4vw 8.7vw 5.8vw rgba(10, 10, 10, 0.2), 0px 0.3vw 5.8vw #331C8B, inset 0px 0.1vw 0.7vw rgba(255, 255, 255, 0.58), inset 0.7vw 1.5vw 7.3vw #200C4C;
+}
+
+
+
+
+.advantages_list_title{
+    font-weight: 500;
+    font-size: 1.7vw;
+
+}
+
+.advantages_list_subtitle {
+    margin-top: 0.8vw;
+    font-size: 1vw;
+    width: 15.2vw;
+    opacity: 0.5;
+}
+
+
+
+.planet_advanteges {
+    position: relative;
+}
+
+.planet_advanteges img{
+    width: 46.9vw;
+    margin-top: 22.4vw;
+}
+.planet_advanteges::before{
+    content: '';
+    background: url('../img/Header/Circle_Text.png')50% 50%/73% 73% no-repeat;
+    width: 10.4vw;
+    height: 10.4vw;
+    position: absolute;
+    top: 35.7vw;
+    left: 18vw;
+    animation: 35s linear 1s normal none infinite running circle;
+    -webkit-animation: 42s linear 1s normal none infinite running circle;
+}
+.advantage_vawe{
+    position: relative;
+    top: -9.9vw;
+    z-index: 10;
+
+}
+
+@media screen and (max-width: 1024px) {
+
+.advantages_content{
+    padding-left: 1.75vw;
+}
+
+.advantages_topSec{
+    padding: 4.68vw 0;
+}
+
+.advantages_title{
+    width:36.54vw;
+    font-size: 4.14vw;
+    margin-top: 4.68vw;
+}
+
+.advantages_subtitle{
+    margin-top: 2.52vw;
+    font-size: 2.34vw;
+}
+
+
+.advantages_list{
+    max-width: 30.06vw;
+    margin-top: 14.04vw;
+    margin-left: 1.3vw;
+}
+
+
+.advantages_list ol li{
+    margin-bottom: 18.72vw;
+}
+
+
+
+.advantages_list ol li::before{
+    font-size: 14.04vw;
+    top: -15.48vw;
+    left: -6.12vw;
+}
+
+.advantages_list ol li::after{
+    top: -4.68vw;
+    left: -4.68vw;
+    width: 12.24vw;
+    height: 12.24vw;
+    box-shadow: 0px 0px 2.7vw #2D1185, 7.92vw 15.66vw 10.44vw rgba(10, 10, 10, 0.2), 0px 0.54vw 10.44vw #331C8B, inset 0px 0.18vw 1.26vw rgba(255, 255, 255, 0.58), inset 1.26vw 2.7vw 13.14vw #200C4C;
+
+}
+
+.advantages_list_title{
+    font-size: 3.06vw;
+}
+
+.advantages_list_subtitle {
+    margin-top: 1.44vw;
+    font-size: 1.8vw;
+    width: 27.36vw;
+}
+
+.planet_advanteges img{
+    width: 46.9vw;
+    margin-top: 55.32vw;
+}
+.planet_advanteges::before{
+    width: 18.72vw;
+    height: 18.72vw;
+    top: 64.4vw;
+    left: 14vw;
+}
+}
+
+@media screen and (max-width: 768px) {
+
+    .advantages_content{
+        padding-left: 2.27vw;
+    }
+    
+    .advantages_topSec{
+        padding: 6vw 0;
+    }
+    
+    .advantages_title{
+        width:47.05vw;
+        font-size: 5.38vw;
+        margin-top: 6vw;
+    }
+    
+    .advantages_subtitle{
+        margin-top: 3.27vw;
+        font-size: 3vw;
+    }
+    
+    
+    .advantages_list{
+        max-width: 39vw;
+        margin-top: 18.25vw;
+        margin-left: 1.69vw;
+    }
+    
+    
+    .advantages_list ol li{
+        margin-bottom: 24.33vw;
+    }
+    
+    
+    
+    .advantages_list ol li::before{
+        font-size: 18.25vw;
+        top: -20.12vw;
+        left: -7.95vw;
+    }
+    
+    .advantages_list ol li::after{
+        top: -6vw;
+        left: -6vw;
+        width: 15.9vw;
+        height: 15.9vw;
+        box-shadow: 0px 0px 3.51vw #2D1185, 9.5vw 23.55vw 13.57vw rgba(10, 10, 10, 0.2), 0px 0.7vw 13.57vw #331C8B, inset 0px 0.23vw 1.63vw rgba(255, 255, 255, 0.58), inset 1.63vw 3.51vw 17vw #200C4C;
+    
+    }
+    
+    .advantages_list_title{
+        font-size: 3.97vw;
+    }
+    
+    .advantages_list_subtitle {
+        margin-top: 1.87vw;
+        font-size: 2.34vw;
+        width: 35.56vw;
+    }
+    
+    .planet_advanteges img{
+        width: 60.97vw;
+        margin-top: 71.9vw;
+    }
+    .planet_advanteges::before{
+        width: 24.33vw;
+        height: 24.33vw;
+        top: 83.6vw;
+        left: 17.9vw;
+    }
+}
+
+@media screen and (max-width: 520px) {
+
+    .advantages_content{
+        padding-left: 3.3vw;
+    }
+    
+    .advantages_topSec{
+        padding: 10.8vw 0;
+    }
+    
+    .advantages_title{
+        width:84.69vw;
+        font-size: 9.68vw;
+        margin-top: 10.8vw;
+    }
+    
+    .advantages_subtitle{
+        margin-top: 5.88vw;
+        font-size: 5.4vw;
+    }
+    
+    .advantages_flex_content{
+        flex-direction: column;
+        justify-content:flex-start;
+    }
+    
+    .advantages_list{
+        max-width: 70.2vw;
+        margin-top: 32.85;
+        margin-left: 0vw;
+    }
+    
+    
+    .advantages_list ol li{
+        margin-bottom: 33.79vw;
+    } 
+    
+    
+    
+    .advantages_list ol li::before{
+        font-size: 27.72vw;
+        top: -33.15vw;
+        left: -10.33vw;
+    }
+    
+    .advantages_list ol li::after{
+        top: -9.8vw;
+        left: -9.8vw;
+        width: 25.67vw;
+        height: 25.67vw;
+        box-shadow: 0px 0px 3.51vw #2D1185, 9.5vw 23.55vw 13.57vw rgba(10, 10, 10, 0.2), 0px 0.7vw 13.57vw #331C8B, inset 0px 0.23vw 1.63vw rgba(255, 255, 255, 0.58), inset 1.63vw 3.51vw 17vw #200C4C;
+    
+    }
+    
+    .advantages_list_title{
+        font-size: 9.16vw;
+    }
+    
+    .advantages_list_subtitle {
+        margin-top: 2.43vw;
+        font-size: 6.2vw;
+        width: 80.5vw;
+    }
+    
+    .planet_advanteges img{
+        width:110.97vw;
+        margin-top:0vw;
+        margin-left: -9vw;
+    }
+    .planet_advanteges::before{
+        width: 40.33vw;
+        height: 40.33vw;
+        top: 23.6vw;
+        left: 25.9vw;
+    }
+}

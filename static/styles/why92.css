@@ -1,0 +1,506 @@
+.dow-sec-wave {
+    position: relative;
+    z-index: 3;
+}
+.bottom_section {
+    
+    margin-top: -18.2vw;
+    z-index: 1;
+    position: relative;
+    color: #fff;
+    background: linear-gradient(rgba(42, 13, 130, 1) 1.03%,rgba(42, 13, 130, 1) 1.04%,rgba(35, 8, 79, 1) 42.53%,rgba(8, 5, 43, 1) 100%);
+    overflow: hidden;
+}
+
+.bottom_section::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+    background: url('../img/Why92/bg-footer.png')0 0/100% auto no-repeat;
+    z-index: -1;
+}
+
+    
+.why_section {
+}
+
+.why_section_wrapper {
+}
+.why_top-sec {
+    margin-left: 59.8vw;
+}
+.why_top-sec_title {
+    font-weight: 700;
+    font-size: 1.3vw;
+    text-transform: capitalize;
+}
+
+.why_subtitle_flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.why_subtitle_flex p:nth-child(1){
+    position: relative;
+    flex: 0 1 auto;
+    font-weight: 700;
+    font-size: 7.8vw;
+    margin: 0;
+    text-transform: capitalize;
+    background: radial-gradient(96% 96% at 70.4% 31.2%, rgba(255, 255, 255, 0.2) 0%, #B0D1D8 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #39C2D5;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    
+    text-shadow: 83.962px 167.924px 111.949px rgba(10, 10, 10, 0.2), 0px 5.59747px 111.949px #41CAD8, -1px 2px 5px rgba(255, 255, 255, 0.7);
+}
+
+.why_subtitle_flex p:nth-child(1)::before{
+    content: '';
+    position: absolute;
+    width: 8vw;
+    height: 8vw;
+    bottom: 0;
+    left: 0;
+    margin-left: -3.6vw;
+    margin-bottom: -2.1vw;
+    background: url('../img/Why92/Title_bg.png') 50% 50%/ 100% 100% no-repeat;
+}
+
+.why_subtitle_flex p:nth-child(2) {
+    flex: 0 1 auto;
+    font-weight: 400;
+    font-size: 1.3vw;
+    max-width: 10.3vw;
+    margin-left: 1.9vw;
+    padding-top: 3.8vw;
+}
+.why_subtitle_flex p:nth-child(3) {
+    flex: 0 1 100%;
+    max-width: 26.5vw;
+    font-weight: 400;
+    font-size: 1.3vw;
+    margin-left: 1.4vw;
+    margin: 0;
+    margin-top: -0.5vw;
+    position: relative;
+    z-index: 2;
+}
+.why_content {
+    position: relative;
+    display: flex;
+    height: 43.9vw;
+    width: 100vw;
+    background: url('../img/Why92/Content_Line.png')50% 50%/ 100% 100% no-repeat;
+    justify-content: space-around;
+    padding: 0 5.8vw;
+    font-weight: 400;
+    font-size: 1.14vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+
+.why_content p span{
+    color:#43B5E3;
+    font-weight: 700;
+}
+
+.why_content_text {
+    position: relative;
+    margin: 0;
+    z-index: 2;
+    flex:0 1 50%;
+
+}
+
+.why_content p {
+    margin: 0 auto;
+    max-width: 16.5vw;
+}
+
+.why_content .why_content_text:nth-child(1) {
+    position: relative;
+    left: -12.4vw;
+    top: 7.2vw;
+}
+
+.why_content .why_content_text:nth-child(1)::before {
+    position: absolute;
+    left: 4.5vw;
+    top: -14.6vw;
+    width: 40.6vw;
+    height: 43.6vw;
+    content: '';
+    background: url('../img/Why92/Planets/Planet1.png')0 0/100% 100% no-repeat;
+    z-index: -1;
+}
+
+.why_content .why_content_text:nth-child(2) {
+    position: relative;
+    left: 10.4vw;
+    top: 5.2vw;
+}
+
+.why_content .why_content_text:nth-child(2)::before {
+    position: absolute;
+    left: 4.6vw;
+    top: -14vw;
+    width: 36.6vw;
+    height: 41.6vw;
+    content: '';
+    background: url('../img/Why92/Planets/Planet4.png')0 0/100% 100% no-repeat;
+    z-index: -1;
+}
+
+.why_content .why_content_text:nth-child(3) {
+    position: relative;
+    left: 5.4vw;
+    transform: rotate(-14.15deg);
+}
+
+.why_content .why_content_text:nth-child(3)::before {
+    position: absolute;
+    left: 1.6vw;
+    top: -16.3vw;
+    width: 41.6vw;
+    height: 41.6vw;
+    content: '';
+    background: url('../img/Why92/Planets/Planet2.png')0 0/100% 100% no-repeat;
+    z-index: -1;
+    transform: rotate(11deg);
+}
+
+.why_content .why_content_text:nth-child(4) {
+    position: relative;
+    top: 2vw;
+    left: -5.4vw;
+}
+
+.why_content .why_content_text:nth-child(4)::before {
+    position: absolute;
+    left: 3.5vw;
+    top: -14.6vw;
+    width: 41.6vw;
+    height: 41.6vw;
+    content: '';
+    background: url('../img/Why92/Planets/Planet3.png')0 0/100% 100% no-repeat;
+    z-index: -1;
+}
+
+
+@media screen and (max-width:1024px){
+
+    .why_top-sec {
+        margin-top: 5vw;
+        width: 35vw;
+        margin-left: 56.9vw;
+    }
+    .why_top-sec_title {
+        font-size: 1.69vw;
+    }
+    
+    .why_subtitle_flex p:nth-child(1){
+        font-size: 10.14vw;
+    }
+    
+    .why_subtitle_flex p:nth-child(1)::before{
+        width: 10.4vw;
+        height: 10.4vw;
+        margin-left: -3.6vw;
+        margin-bottom: -3.4vw;
+    }
+    
+    .why_subtitle_flex p:nth-child(2) {
+        font-size: 1.69vw;
+        max-width: 13.39vw;
+        margin-left: 1.9vw;
+        padding-top: 5.2vw;
+    }
+    .why_subtitle_flex p:nth-child(3) {
+        max-width: 34.45vw;
+        font-size: 1.69vw;
+        margin-top: -0.5vw;
+    }
+    .why_content {
+        height: 57.07vw;
+        background: url('../img/Why92/Content_Line_1024.png')0 -25vw/ 100% 140% no-repeat;
+        padding: 0 1.75vw;
+        font-size: 1.82vw;
+    }
+    
+
+    .why_content p {
+        max-width: 21.45vw;
+    }
+    
+    .why_content .why_content_text:nth-child(1) {
+        left: -4vw;
+        top: 2.2vw;
+    }
+    
+    .why_content .why_content_text:nth-child(1)::before {
+        position: absolute;
+        left: 1.9vw;
+        top: -16vw;
+        width: 50.6vw;
+        height: 53.6vw;
+    }
+    
+    .why_content .why_content_text:nth-child(2) {
+        left: 6.4vw;
+        top: 3.2vw;
+    }
+    
+    .why_content .why_content_text:nth-child(2)::before {
+        left: 1.3vw;
+        top: -15vw;
+        width: 46.6vw;
+        height: 51.6vw;
+        opacity: 0.7;
+    }
+    
+    .why_content .why_content_text:nth-child(3) {
+        top: 2vw;
+        left: 3vw;
+    }
+    
+    .why_content .why_content_text:nth-child(3)::before {
+        left: -3.3vw;
+        top: -22vw;
+        width: 55.6vw;
+        height: 55.6vw;
+    }
+    
+    .why_content .why_content_text:nth-child(4) {
+        top: 2vw;
+        left: 0vw;
+    }
+    
+    .why_content .why_content_text:nth-child(4)::before {
+        left: 1.2vw;
+        top: -17.6vw;
+        width: 51.6vw;
+        height: 51.6vw;
+    }
+}
+
+@media screen and (max-width:768px){
+
+    .why_top-sec {
+        width: 63vw;
+        margin-left: 31.5vw;
+    }
+
+    .bottom_section::before {
+        background: url('../img/Why92/bg-footer.png') 20% 0/150% auto no-repeat;
+    }
+
+    .why_top-sec_title {
+        margin-top: 5vw;
+        font-size: 3.04vw;
+    }
+    
+    .why_subtitle_flex p:nth-child(1){
+        font-size: 18.72vw;
+        margin-top: -3.5vw;
+    }
+    
+    .why_subtitle_flex p:nth-child(1)::before{
+        width: 14.72vw;
+        height: 14.72vw;
+        margin-left: -5.6vw;
+        margin-bottom: -1.4vw;
+    }
+    
+    .why_subtitle_flex p:nth-child(2) {
+        font-size: 3.04vw;
+        max-width: 24.1vw;
+        margin-left: 1.9vw;
+        padding-top: 6.3vw;
+    }
+    .why_subtitle_flex p:nth-child(3) {
+        max-width: 62vw;
+        font-size: 3.04vw;
+        margin-top: -4vw;
+    }
+    .why_content {
+        height: 87.07vw;
+        background: url('../img/Why92/Content_Line_1024.png')0 -35vw/ 100% 145% no-repeat;
+        padding: 0 1.75vw;
+        font-size: 3.27vw;
+    }
+    
+
+    .why_content p {
+        max-width: 38.61vw;
+    }
+    
+    .why_content .why_content_text:nth-child(1) {
+        left: -4vw;
+        top: 13.2vw;
+    }
+    
+    .why_content .why_content_text:nth-child(1)::before {
+        position: absolute;
+        left: -6.2vw;
+        top: -19.9vw;
+        width: 69.6vw;
+        height: 74.6vw;
+    }
+    
+    .why_content .why_content_text:nth-child(2) {
+        left: 4.4vw;
+        top: 13.2vw;
+    }
+    
+    .why_content .why_content_text:nth-child(2)::before {
+        left: -8.5vw;
+        top: -22vw;
+        width: 71.6vw;
+        height: 76.6vw;
+        opacity: 0.7;
+        transform: rotate(-12.15deg);
+    }
+    
+    .why_content .why_content_text:nth-child(3) {
+        top: 10vw;
+        left: -3vw;
+    }
+    
+    .why_content .why_content_text:nth-child(3)::before {
+        left: -15.7vw;
+        top: -30vw;
+        width: 79.6vw;
+        height: 79.6vw;
+    }
+    
+    .why_content .why_content_text:nth-child(4) {
+        top: 12vw;
+        left: 4.5vw;
+    }
+    
+    .why_content .why_content_text:nth-child(4)::before {
+        left: -10vw;
+        top: -25.6vw;
+        width: 78.6vw;
+        height: 78.6vw;
+    }
+}
+
+@media screen and (max-width:520px){
+
+    .why_top-sec {
+        width: 81.9vw;
+        margin-left: 1.5vw;
+    }
+
+    .bottom_section::before {
+        background: url('../img/Why92/bg-footer.png') 20% 0/200% auto no-repeat;
+    }
+
+    .why_top-sec_title {
+        margin-top: 5vw;
+        font-size: 3.95vw;
+    }
+    
+    .why_subtitle_flex p:nth-child(1){
+        font-size: 24.33vw;
+        margin-top: -4vw;
+    }
+    
+    .why_subtitle_flex p:nth-child(1)::before{
+        width: 24.72vw;
+        height: 24.72vw;
+        margin-left: -9.6vw;
+        margin-bottom: -7.4vw;
+    }
+    
+    .why_subtitle_flex p:nth-child(2) {
+        font-size: 3.95vw;
+        max-width: 31.33vw;
+        margin-left: 1.9vw;
+        padding-top: 8.4vw;
+    }
+    .why_subtitle_flex p:nth-child(3) {
+        max-width: 80.6vw;
+        font-size: 3.95vw;
+        margin-top: -4vw;
+    }
+    .why_content {
+        margin-top: 30vw;
+        display: block;
+        height: auto;
+        background: url('../img/Why92/Content_Line_1024.png')-20vw -125vw/ 200% 170% no-repeat;
+        padding: 0 1.75vw;
+        font-size: 4.25vw;
+    }
+    
+
+    .why_content p {
+        max-width: 50.19vw;
+        margin-bottom: 15vw;
+    }
+    
+ 
+
+    .why_content .why_content_text:nth-child(1) {
+        left: -20vw;
+        top: 6vw;
+    }
+    
+    .why_content .why_content_text:nth-child(1)::before {
+        position: absolute;
+        left: 5.8vw;
+        top: -29.9vw;
+        width: 98.6vw;
+        height: 103.6vw;
+    }
+    
+    .why_content .why_content_text:nth-child(2) {
+        left: 20vw;
+        top: 6vw;
+        margin-bottom: 30vw;
+    }
+    
+    .why_content .why_content_text:nth-child(2)::before {
+        left: 2vw;
+        top: -30vw;
+        width: 100.6vw;
+        height: 105.6vw;
+        opacity: 0.7;
+    }
+    
+    .why_content .why_content_text:nth-child(3) {
+        top: 0;
+        left: -20vw;
+        margin-bottom: 30vw;
+    }
+    
+    .why_content .why_content_text:nth-child(3)::before {
+        left: -5.7vw;
+        top: -40vw;
+        width: 108.6vw;
+        height: 108.6vw;
+    }
+    
+    .why_content .why_content_text:nth-child(4) {
+        top: 0;
+        left: 20vw;
+        margin-bottom: 30vw;
+    }
+    
+    .why_content .why_content_text:nth-child(4)::before {
+        left: 1vw;
+        top: -35.6vw;
+        width: 108.6vw;
+        height: 108.6vw;
+    }
+}

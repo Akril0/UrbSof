@@ -1,0 +1,107 @@
+1. Setup margins for sections and titles
+2. Social Networks
+3. Burger Menu
+4. Languages
+5. Setup fonts and postions on services planets
+
+//TODO
+Главаная секция:{
+ Топ бар больше верхний отступ,??????? 
+  замена бургера с картинки на элементы и анимация в крестик
+  ссылки и хедер на одно уровне 
+  поправить текст у кнопки
+}//сделал(почти полностью)
+
+Про нас:{
+   .aboutUs_title {
+      color: #401F71;
+      font-weight: 700;
+      font-size: 2.3vw;
+      margin-bottom: 0.85vw;
+   },
+ поравить планетки
+}сделано
+
+  
+Важно для нас:{
+   Паралакс фона и планеты(планеты по возможности)
+   планета ме меньше
+   }не спросил))))
+Сервисы:{
+   добавить перенос текста
+}сделано
+Работы:{
+   .slaider_section {
+    margin-top: 8.5vw;
+    position: relative;
+    padding: 0 12.08vw;
+   },
+   если шара не будет, сделать больше нижний отступ
+}
+Почему:{
+   текст после 92 приподнять,(3.8вв)
+   первую планету сделать более круглой
+} 
+Свяжитесь с нами:{
+      .form::before {
+      pointer-events: none;
+      position: absolute;
+      background: url(../img/ContactUs/Moon.png)0 0/100% 100% no-repeat;
+      content: '';
+      right: -50vw;
+      top: -17vw;
+      width: 47.9vw;
+      height: 47.9vw;
+      z-index: -1;
+      animation: 26s linear 1s normal none infinite running circle;
+      -webkit-animation: 42s linear 1s normal none infinite running circle;
+   },
+   .contact_sec {
+    margin-top: 13.4vw;
+    padding: 0 12.6vw;
+    position: relative;
+    z-index: 4;
+   },
+   приподнять кнопку, и сделать её не абсолютной
+}
+
+Футер:{
+      .footer::after {
+      position: absolute;
+      content: '';
+      width: 100vw;
+      height: 30vw;
+      background: url(../img/Footer/footer-line.png)0 0/100% auto no-repeat;
+      top: -5vw;
+      left: 0;
+      z-index: -10;
+   },
+   .footer_item ul {
+      margin: 0;
+      padding: 0;
+      margin-top: 1vw;
+   },
+опустить, увеличить социалки,
+   .footer_container {
+      width: 62.6vw;
+      display: inline-flex;
+      border-bottom: 0.1vw solid #1072B8;
+      padding-bottom: 1vw;
+   }
+      .footer_bottom {
+      margin-top: 1vw;
+      display: flex;
+      justify-content: flex-start;
+      padding-bottom: 0.9vw;
+   },
+   .all_rights_reserved {
+      width: 15.6vw;
+      margin-left: 20.4vw;
+      margin-top: 1.9vw;
+      color: white;
+      opacity: 0.7;
+      font-weight: 400;
+      font-size: 0.7vw;
+   }
+}
+

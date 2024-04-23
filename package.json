@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemailer": "^6.7.8",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.5.0"
+  },
+  "name": "urbsoft",
+  "description": "<!-- {\r    \"WEB-title\": \"URBSoft.PRO - We create memorable digital experience\",\r    \"header-title_1Line\": \"International\",\r    \"header-title_2Line\": \"software\",\r    \"header-title_3Line\": \"development\",\r    \"header-title_4Line\": \"company\",\r    \"header_content\": \"We create market-leading software by building the world's finest software\",\r    \"header_ case\": \"Case\",\r    \"erth_img-title\": \"Ukraine, Lviv\",\r    \"aboutUs_title\": \"About us\",\r    \"about_us_content-span\": \"URBsoft\",\r    \"about_us_content\": \"- is a team of young and ambitious people who will help you look at your product with new eyes!\",\r    \"about_us_content-subtitle\": \"We are here to develop for you a quality product that will take your business to a whole new level. We work and improve every day so that the difference between expectation and reality is minimal\",\r    \"advantages_title\":\"What's important to us?\",\r    \"advantages_subtitle\": \"Our values\",\r    \"advantages-efficiency\": \"Efficiency\",\r    \"advantages-efficiency_subtitle\": \"We work in the shortest possible time\",\r    \"advantages-trust\": \"Trust\",\r    \"advantages-trust_subtitle\": \"We work for the future, trust and long-term cooperation\",\r    \"advantages-quality\":\"Quality\",\r    \"advantages-quality_subtitle\":\"Quality is the key to our success\",\r    \"services_titel\":\"Our services\",\r    \"service_subtitle\":\" We provide a full range of various services!\",\r    \"service-UI/UX\":\"UI/UX Design\",\r    \"service-UI/UX_subtitle\":\"Quality user interface design is the most important step in attracting the customer's attention\",\r    \"service-DevOps\":\"DevOps\",\r    \"service-DevOps_subtitle\":\"Efficient work of all aspects of creating web and mobile applications\",\r    \"service-Web\":\"Web Development\",\r    \"service-Web_sutitle\":\"We develop and launch your project\",\r    \"service-App\":\"App Development\",\r    \"service-App_subtitle\":\"Mobile apps are the main way and everyday way to communicate with your audience\",\r    \"slaider_title\":\"Recent works\",\r    \"slaider_subtitle\":\"It is important for us to accurately reflect your expectations and our ideas\",\r    \"slider-carRental\":\"corporate website for car rental\",\r    \"\":\"\",\r } -->",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akril0/URBSoft.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Akril0/URBSoft/issues"
+  },
+  "homepage": "https://github.com/Akril0/URBSoft#readme"
+}

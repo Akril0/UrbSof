@@ -1,0 +1,591 @@
+.header {
+    position: relative;
+    color: white;
+    margin-top: 0;
+    z-index: 1;
+    background: linear-gradient(325.65deg, #2A0D82 45.38%, #2A0D82 45.38%, #23084F 68.13%, #08052B 99.63%);
+}
+
+
+.header__container {
+    position: relative;
+    padding: 0 2.6vw;
+    box-sizing: border-box;
+    height: 100vh;
+    min-height: 634px;
+}
+.header__topBar {
+    margin-top: 0.8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    position: relative;
+    z-index: 10;
+}
+
+.logo img {
+    position: relative;
+    z-index: 10;
+    width: 7.2vw;
+}
+
+.logo::before{
+    content: '';
+    position: absolute;
+    background: radial-gradient(50.01% 50.01% at 50.01% 49.99%, #26FFEF 0%, rgba(39, 228, 223, 0.9248) 7.52%, rgba(43, 162, 186, 0.7304) 26.96%, rgba(45, 107, 154, 0.5453) 45.47%, rgba(47, 65, 130, 0.3748) 62.52%, rgba(49, 34, 112, 0.2217) 77.83%, rgba(50, 16, 102, 0.0916342) 90.84%, rgba(50, 9, 98, 0) 100%);
+    opacity: 0.3;
+    width: 15.6vw;
+    height: 15.6vw;
+    z-index: -1;
+    top: -6.2vw;
+    left: -5.6vw;
+    
+}
+
+.header_text{
+    margin:8.84vh 0 0 12.08vw ;
+}
+
+.header__contentWrap{
+    position: relative;
+    z-index: 3;
+    height: 95vh;
+}
+
+.header_title_en, .header_title_ua{
+    z-index: 4;
+    position: relative;
+    font-weight: 700;
+    font-size: 3.1vw;
+    text-transform: uppercase;
+}
+
+.header_title_en p{
+    margin: 0;
+    height: 3.2vw;
+}
+
+.header_title_en p:nth-child(2){
+    padding-left: 12vw;
+    color: #43B6E4;
+}
+
+.header_title_en p:nth-child(3){
+    padding-left: 5vw;
+}
+
+.header_title_en p:nth-child(4){
+    padding-left: 22vw;
+}
+
+.header_title_ua p{
+    margin: 0;
+    height: 3.2vw;
+}
+
+.header_title_ua p:nth-child(2){
+    padding-left: 10vw;
+}
+
+.header_title_ua p:nth-child(3){
+    color: #43B6E4;
+    padding-left: 5vw;
+}
+
+.header_title_ua p:nth-child(4){
+    padding-left: 3vw;
+}
+
+.header_title_ua p:nth-child(5){
+    padding-left: 11vw;
+}
+
+.header_content {
+    margin-top: 2.6vw;
+    max-width: 15.6vw;
+    font-weight: 400;
+    font-size:0.9vw;
+    text-indent: 3vw;
+    
+    margin-left: 5vw;
+}
+
+.header_content_ua {
+    margin-top: 2.6vw;
+    width: 18vw;
+    font-weight: 400;
+    font-size:0.9vw;
+    text-indent: 3vw;
+    
+    margin-left: 8vw;
+}
+
+.links {
+    width: 94.5vw;
+    position: absolute;
+    text-transform: uppercase;
+    padding: 0 0;
+    display: flex;
+    flex-direction: row;
+    opacity: 0.4;
+    justify-content:space-between;
+    transition: ease all 0.3;
+    z-index: 10;
+    bottom: 1vh;
+}
+
+._link{
+    color: #fff;
+      font-weight: 400;
+      line-height: 45px;
+    font-weight: 400;
+    font-size: 0.8vw;
+    transition: .1s linear;
+  }
+  
+  ._link:hover {
+    background: linear-gradient(133.09deg, #004460 13.56%, #8731E0 14.84%, #FFDDF1 51.52%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    transition: ease all 0.3;
+  }
+
+.social_networks a{
+    margin-right: 1.2vw;
+}
+
+.social_networks svg{
+    height: 1.1vw;
+    width: 1.3vw;
+}
+
+.social_networks a:nth-child(2){
+    position: relative;
+    top: 0.08vw;
+    left: 0vw;
+}
+
+stop{
+    transition: .1s linear;
+}
+
+.social-animate a:hover stop:nth-child(1){
+    stop-color: #004460;
+}
+
+.social-animate a:hover stop:nth-child(2){
+    stop-color: #8731E0;
+}   
+
+.social-animate a:hover stop:nth-child(3){
+    stop-color: #FFDDF1;
+}
+
+.parallax__images {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+
+}
+
+.images-parallax__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.images-parallax__shoot-stars { 
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background: url('../img/Header/PlanetsBG.png')top/ cover no-repeat;
+    top: 0;
+}
+.images-parallax__buble {
+    position: absolute;
+    width: 45vw;
+    height: 45vw; 
+    background: url('../img/Header/Bubble.png')bottom/ cover no-repeat;
+    right: 14vw;
+    top: 10.4vw;
+    z-index: 1;
+}
+.images-parallax__clouds {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 70%; 
+    background: url('../img/Header/Clouds.png')bottom/ cover no-repeat;
+    opacity: 0.6;
+    bottom: 15%;
+    z-index: 0;
+}
+
+
+
+.topBar_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.popup_button {
+    content: '';
+    height: 1.3vw;
+    width: 2.4vw;
+    background: url('../img/Header/BurgerMenu.png')50% 50%/ 100% 100% no-repeat;
+    transition: all 0.1s linear;
+}
+
+.popup_button:hover {
+    opacity: 0.5;
+}
+
+.language {
+    margin-left: 0.65vw;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.7vw;
+  
+}
+
+.language a{
+    font-weight: 400;
+
+}
+
+.language button{
+    opacity: 0.4;
+}
+
+
+
+.english_button {
+    font-weight: 400;
+    text-transform: uppercase;
+    
+}
+.ukr_button {
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.language ._active-lang{
+    opacity: 1;
+}
+
+
+
+@media screen and (max-width: 1024px)  {
+    .header__container {
+        padding: 0 1.7vw;
+    }
+
+    .logo img {
+        width: 12vw;
+        margin-left: -2vw;
+    }
+
+    .logo::before{
+        width: 29.25vw;
+        height:  29.25vw;
+        top: -11.6vw;
+        left: -13.5vw;
+    }
+    .header_text{
+        margin:9.75vw 0 0 1.7vw ;
+    }
+    .header_title_en, .header_title_ua{ 
+        font-size: 5.8vw;
+    }
+    .header_title_en p{
+        height: 5.9vw;
+    }
+    
+    .header_title_en p:nth-child(2){
+        padding-left: 22.5vw;
+    }
+    
+    .header_title_en p:nth-child(3){
+        padding-left: 9.3vw;
+    }
+    
+    .header_title_en p:nth-child(4){
+        padding-left: 41.25vw;
+    }
+    
+    .header_title_ua p{
+        height: 6vw;
+    }
+    
+    .header_title_ua p:nth-child(2){
+        padding-left: 18.75vw;
+    }
+    
+    .header_title_ua p:nth-child(3){
+        padding-left: 9.3vw;
+    }
+    
+    .header_title_ua p:nth-child(4){
+        padding-left: 5.6vw;
+    }
+    
+    .header_title_ua p:nth-child(5){
+        padding-left: 20.6vw;
+    }
+    .header_content {
+        margin-top: 4.8vw;
+        max-width: 29.25vw;
+        font-size:  1.6vw;
+        text-indent: 5.6vw;
+        margin-left: 9.3vw;
+    }
+    
+    .header_content_ua {
+        margin-top: 4.8vw;
+        width: 32.25vw;
+        font-size:  1.6vw;
+        text-indent: 5.6vw;
+        margin-left: 15.3vw;
+    }
+    
+    .links {
+        width: 97vw;
+        padding-left: 0.7vw;
+    }
+    ._link{
+        font-size: 1.5vw;
+      }
+    
+    .social_networks svg{
+        height: 1.8vw;
+        width: 2.4vw;
+    }
+
+    .images-parallax__buble {
+        width: 65vw;
+        height: 65vw; 
+        right: 2vw;
+        top: 19.5vw;
+    }
+    
+    .popup_button {
+        height: 2.4vw;
+        width: 4.5vw;
+    }
+    .language {
+        margin-left: 1.2vw;
+        font-size: 1.3vw;
+    }
+        
+}
+
+@media screen and (max-width: 768px)  {
+    .header__container {
+        padding: 0 2.2vw;
+    }
+
+    .logo img {
+        width: 16vw;
+        margin-left: -2.6vw;
+    }
+
+    .logo::before{
+        width: 39vw;
+        height:  39vw;
+        top: -15.4vw;
+        left: -18vw;
+    }
+    .header_text{
+        margin:13vw 0 0 2.21vw ;
+    }
+    .header_title_en, .header_title_ua{ 
+        font-size: 7.54vw;
+    }
+    .header_title_en p{
+        height: 7.67vw;
+    }
+    
+    .header_title_en p:nth-child(2){
+        padding-left: 29.25vw;
+    }
+    
+    .header_title_en p:nth-child(3){
+        padding-left: 12.09vw;
+    }
+    
+    .header_title_en p:nth-child(4){
+        padding-left: 53.6vw;
+    }
+    
+    .header_title_ua p{
+        height: 7.8vw;
+    }
+    
+    .header_title_ua p:nth-child(2){
+        padding-left: 24.37vw;
+    }
+    
+    .header_title_ua p:nth-child(3){
+        padding-left: 12.09vw;
+    }
+    
+    .header_title_ua p:nth-child(4){
+        padding-left: 7.28vw;
+    }
+    
+    .header_title_ua p:nth-child(5){
+        padding-left: 26.78vw;
+    }
+    .header_content {
+        margin-top: 6.24vw;
+        max-width: 38.025vw;
+        font-size:  2.08vw;
+        text-indent: 7.28vw;
+        margin-left: 12.09vw;
+    }
+    
+    .header_content_ua {
+        margin-top: 6.24vw;
+        width: 41.925vw;
+        font-size:  2.08vw;
+        text-indent: 7.28vw;
+        margin-left: 19.89vw;
+    }
+    
+    ._link{
+        font-size: 1.95vw;
+      }
+    
+    .social_networks svg{
+        height: 2.34vw;
+        width: 3.12vw;
+    }
+
+    .images-parallax__buble {
+        /* width: 84.5vw;
+        height: 84.5vw;  */
+        right: 2.6vw;
+        top: 36.04vw;
+    }
+    
+    .popup_button {
+        height: 3.12vw;
+        width: 5.85vw;
+    }
+    .language {
+        margin-left: 1.56vw;
+        font-size: 1.69vw;
+    }
+        
+}
+
+@media screen and (max-width: 520px)  {
+    .header__container {
+        padding: 0 3.96vw;
+    }
+
+    .logo img {
+        width: 30.4vw;
+        margin-left: -4.68vw;
+    }
+
+    .logo::before{
+        width: 70.2vw;
+        height:  70.2vw;
+        top: -27.72vw;
+        left: -32.4vw;
+    }
+    .header_text{
+        margin:23.4vw 0 0 1vw ;
+    }
+    .header_title_en, .header_title_ua{ 
+        font-size: 9.2vw;
+    }
+    .header_title_en p{
+        height: 10vw;
+    }
+    
+    .header_title_en p:nth-child(2){
+        padding-left: 10.75vw;
+    }
+    
+    .header_title_en p:nth-child(3){
+        padding-left: 25.09vw;
+    }
+    
+    .header_title_en p:nth-child(4){
+        padding-left: 8vw;
+    }
+    
+    .header_title_ua p{
+        height: 9vw;
+    }
+    
+    .header_title_ua p:nth-child(2){
+        padding-left: 24.37vw;
+    }
+    
+    .header_title_ua p:nth-child(3){
+        padding-left: 12.09vw;
+    }
+    
+    .header_title_ua p:nth-child(4){
+        padding-left: 23.28vw;
+    }
+    
+    .header_title_ua p:nth-child(5){
+        padding-left: 6.78vw;
+    }
+    .header_content {
+        margin-top: 6.24vw;
+        max-width: 100vw;
+        font-size:  5vw;
+        text-indent: 18vw;
+        margin-left: 1vw;
+    }
+    
+    .header_content_ua {
+        margin-top: 8vw;
+        width: 95vw;
+        font-size:  4.5vw;
+        text-indent: 18vw;
+        margin-left: 1vw;
+    }
+    
+    .links {
+        width: 94vw;
+    }
+    ._link{
+        font-size: 3.51vw;
+      }
+    
+    .social_networks svg{
+        height: 4.21vw;
+        width: 5.61vw;
+    }
+
+    .images-parallax__buble {
+        width: 145vw;
+        height: 145vw; 
+        right: -14vw;
+        top: 47.6vw;
+    }
+    
+    .popup_button {
+        height: 5.61vw;
+        width: 10.53vw;
+    }
+    .language {
+        margin-left: 2.80vw;
+        font-size: 3.04vw;
+    }
+        
+}

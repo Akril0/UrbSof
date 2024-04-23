@@ -1,0 +1,479 @@
+
+.aboutUs_container {
+    color: #60566D;
+    position: relative;
+    z-index: 0;
+    margin-top: -10px;
+    background-color: #fff;
+    display: flex;
+    width: 100vw;
+    padding: 0 12.08vw;
+}
+
+.aboutUs_container::before {
+    content: '';
+    position: absolute;
+    width: 120%;
+    height: 400%;
+    right: -35%;
+    top: -30%;
+    background: url('../img/AboutUs/aboutBG.png')0 0/100% auto no-repeat;
+    z-index: -10;
+    pointer-events: none;
+}
+
+.erth {
+    position: relative;
+    width: 50vw;
+    margin-right: 24vw;
+}
+
+.erth_img img{
+    border-radius: 50%;
+    top: -18vw;
+    position: absolute;
+    width: 33vw;
+    height: 33vw;
+    box-shadow: 1vw 1vw 5.2vw 1vw  rgba(174, 97, 251, 0.5);
+}
+
+.title_area {
+    position: relative;
+    z-index: 10;
+    padding-top: 6.4vw;
+    width: 50vw;
+
+}
+
+.aboutUs_title {
+    color: #401F71;
+    font-weight: 700;
+    font-size: 2.3vw;
+    margin-bottom: 0.85vw;
+ }
+
+.about_us_content{
+    font-weight: 400;
+    font-size: 0.9vw;
+}
+
+.about_us_content p{
+    margin-top: 0;
+    margin-bottom: .77vw;
+}
+
+.erth_img-title {
+    position: relative;
+    z-index: 10;
+    top:-16.4vw;
+    left: 13.3vw;
+    color: #fff;
+    font-weight: 400;   
+    font-size: 0.8vw;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(223px);
+    border-radius: 10px;
+    text-align: center;
+    padding: 0.2vw;
+    width: 6.3vw;
+    height: 1.7vw;
+}
+
+.about_us_content span{
+   color: #43B6E4;
+}
+
+.about_us_vawe{
+    position: relative;
+    z-index: 6;
+}
+
+.orbits{
+    position: absolute;
+    pointer-events: none;
+}
+
+.orbit_one{
+    position: absolute;
+    border: 1px solid rgba(67, 182, 228, 0.35);
+    border-radius: 50%;
+    min-width: 54.2vw;
+    min-height: 54.2vw;
+    top: -29.2vw;
+    left: -10.4vw;
+    animation: 35s linear 1s normal none infinite running circle;
+    -webkit-animation: 42s linear 1s normal none infinite running circle;
+}
+
+.orbit_one img:nth-child(1){
+    position: absolute;
+    width: 11.4vw;
+    height: 8.3vw;
+    left: 7vw;
+    animation: 35s linear 1s normal none infinite running rev-circle;
+    -webkit-animation: 42s linear 1s normal none infinite running rev-circle;
+}
+
+.orbit_one img:nth-child(2){
+    position: absolute;
+    width: 6.9vw;
+    height: 5vw;
+    left: 44.2vw;
+    top: 41.7vw;  
+  animation: 35s    1s normal none infinite running rev-circle;
+    -webkit-animation: 42s linear 1s normal none infinite running rev-circle;
+}
+
+.orbit_two{
+    position: absolute;
+    border: 1px solid rgba(67, 182, 228, 0.35);
+    border-radius: 50%;
+    min-width: 86.3vw;
+    min-height: 86.3vw;
+    top: -44.8vw;
+    left: -26vw;
+    animation: 45s linear 1s normal none infinite running rev-circle;
+    -webkit-animation: 52s linear 1s normal none infinite running rev-circle;
+}
+
+.orbit_two img:nth-child(1){
+    top: 2.6vw;
+    left: 20.8vw;
+    position: absolute;
+    width: 6.9vw;
+    height: 3.8vw;
+    animation: 45s linear 1s normal none infinite running circle;
+    -webkit-animation: 52s linear 1s normal none infinite running circle;
+}
+
+.orbit_two img:nth-child(2){
+    position: absolute;
+    width: 8vw;
+    height: 4.3vw;
+    left: 74vw;
+    top: 15.6vw;
+    animation: 45s linear 1s normal none infinite running circle;
+    -webkit-animation: 52s linear 1s normal none infinite running circle;
+}
+.orbit_two img:nth-child(3){
+    position: absolute;
+    width: 6.9vw;
+    height: 3.8vw;
+    left: 62.1vw;
+    top: 78.1vw;
+    animation: 45s linear 1s normal none infinite running circle;
+    -webkit-animation: 52s linear 1s normal none infinite running circle;
+}
+
+@media screen and (max-width: 1024px) {
+    .aboutUs_container {
+        padding: 0 1.75vw;
+    }
+
+    .aboutUs_container::before {
+        width: 170%;
+    }
+    
+    .erth {
+        margin-right: 4vw;
+    }
+    
+    .erth_img img{
+        top: -22vw;
+        width: 48vw;
+        height: 48vw;
+        box-shadow: 2vw 2vw 5.2vw 2vw  rgba(174, 97, 251, 0.5);
+    }
+    
+    .title_area {
+        padding-top: 6.4vw;
+    }
+    
+    .aboutUs_title{
+        font-size:4.2vw;
+        margin-bottom: 1.53vw;   
+    }
+    
+    .about_us_content{
+        font-size: 1.7vw;
+    }
+    
+    .about_us_content p{
+        margin-bottom: 1.38vw;
+    }
+    
+    .erth_img-title {
+        top:-19.7vw;
+        left: 18.7vw; 
+        font-size: 1.3vw;
+        padding: 0.5vw;
+        width: 10.3vw;
+        height: 3vw;
+    } 
+    
+    .orbit_one{
+        min-width: 70vw;
+        min-height: 70vw;
+        top: -34vw;
+        left: -11.4vw;
+    }
+    
+    .orbit_one img:nth-child(1){
+        position: absolute;
+        width: 14.4vw;
+        height: 11.3vw;
+        left: 7.8vw;
+    }
+    
+    .orbit_one img:nth-child(2){
+        width: 9.9vw;
+        height: 8vw;
+        left: 63vw;
+        top: 41.7vw;
+    }
+    
+    .orbit_two{
+        min-width: 100vw;
+        min-height: 100vw;
+        top: -48.8vw;
+        left: -26vw;
+    }
+    
+    .orbit_two img:nth-child(1){
+        top: 3.6vw;
+        left: 20vw;
+        width: 9.9vw;
+        height: 5.8vw;
+    }
+    
+    .orbit_two img:nth-child(2){
+        width: 11vw;
+        height: 6.3vw;
+        left: 73.4vw;
+        top: 6vw;
+    }
+    .orbit_two img:nth-child(3){
+        width: 11vw;
+        height: 6.3vw;
+        left: 68.5vw;
+        top: 90vw;
+    }
+    
+    
+}
+
+@media screen and (max-width: 768px) {
+    .about_us-vawe {
+         margin-top: 15vw;
+    }
+
+    .aboutUs_container {
+        padding: 0 1.75vw;
+        flex-direction: column;
+    }
+
+    .aboutUs_container::before {
+        width: 170%;
+        top: 10vw;
+    }
+    
+    .erth {
+        margin-right: 4vw;
+        position: relative;
+        top: -15vw;
+    }
+    
+    .erth_img img{
+        top: -22vw;
+        width: 60vw;
+        height: 60vw;
+        box-shadow: 2vw 2vw 5.2vw 2vw  rgba(174, 97, 251, 0.5);
+    }
+    
+    .title_area {
+        padding-top: 20.4vw;
+        margin-left: 31.5vw;
+        width: 65vw;
+    }
+    
+    .aboutUs_title{
+        font-size:5.46vw;  
+        margin-bottom: 1.99vw; 
+    }
+    
+    .about_us_content{
+        font-size: 2.21vw;
+    }
+    
+    .about_us_content p{
+        margin-bottom: 1.79vw;
+    }
+    
+    .erth_img-title {
+        top:-19.7vw;
+        left: 22.7vw; 
+        font-size: 1.69vw;
+        padding: 0.5vw;
+        width: 12.3vw;
+        height: 4vw;
+    } 
+    
+    .orbit_one{
+        min-width: 82vw;
+        min-height: 82vw;
+        top: -34vw;
+        left: -11.4vw;
+    }
+    
+    .orbit_one img:nth-child(1){
+        position: absolute;
+        width: 14.4vw;
+        height: 11.3vw;
+        left: 12.8vw;
+    }
+    
+    .orbit_one img:nth-child(2){
+        width: 9.9vw;
+        height: 8vw;
+        left: 72vw;
+        top: 53.7vw;
+    }
+    
+    .orbit_two{
+        min-width: 112vw;
+        min-height: 112vw;
+        top: -48.8vw;
+        left: -26vw;
+    }
+    
+    .orbit_two img:nth-child(1){
+        top: 4.6vw;
+        left: 24vw;
+        width: 9.9vw;
+        height: 5.8vw;
+    }
+    
+    .orbit_two img:nth-child(2){
+        width: 11vw;
+        height: 6.3vw;
+        left: 80vw;
+        top: 6vw;
+    }
+    .orbit_two img:nth-child(3){
+        width: 11vw;
+        height: 6.3vw;
+        left: 78.5vw;
+        top: 101vw;
+    }
+    
+    
+}
+
+@media screen and (max-width: 520px) {
+    .about_us-vawe {
+         margin-top: 15vw;
+    }
+
+    .aboutUs_container {
+        padding: 0 3.3vw;
+        flex-direction: column;
+    }
+
+    .aboutUs_container::before {
+        width: 250%;
+        top: 10vw;
+        right: -80vw;
+    }
+    
+    .erth {
+        margin-right: 4vw;
+        position: relative;
+        top: -15vw;
+    }
+    
+    .erth_img img{
+        top: -22vw;
+        width: 90vw;
+        height: 90vw;
+        box-shadow: 2vw 2vw 5.2vw 2vw  rgba(174, 97, 251, 0.5);
+    }
+    
+    .title_area {
+        padding-top: 50.4vw;
+        margin-left: 0;
+        width: 93vw;
+    }
+    
+    .aboutUs_title{
+        font-size: 9.3vw;   
+        margin-bottom: 3.36vw;
+    }
+    
+    .about_us_content{
+        font-size: 3.978vw;
+        margin-bottom: 20vw;
+    }
+    
+    .about_us_content p{
+        margin-bottom: 3.18vw;
+    }
+    
+    .erth_img-title {
+        top:-17.7vw;
+        left: 34.7vw; 
+        font-size: 3vw;
+        padding: 0.5vw;
+        width: 21.3vw;
+        height: 6vw;
+    } 
+    
+    .orbit_one{
+        min-width: 112vw;
+        min-height: 112vw;
+        top: -36vw;
+        left: -11.4vw;
+    }
+    
+    .orbit_one img:nth-child(1){
+        position: absolute;
+        width: 18.4vw;
+        height: 15.3vw;
+        left: 18.8vw;
+    }
+    
+    .orbit_one img:nth-child(2){
+        width: 18.9vw;
+        height: 15vw;
+        left: 90vw;
+        top: 83.7vw;
+    }
+    
+    .orbit_two{
+        min-width: 182vw;
+        min-height: 182vw;
+        top: -68.8vw;
+        left: -46vw;
+    }
+    
+    .orbit_two img:nth-child(1){
+        top: 4.6vw;
+        left: 34vw;
+        width: 20.9vw;
+        height: 13.8vw;
+    }
+    
+    .orbit_two img:nth-child(2){
+        width: 16vw;
+        height: 9.3vw;
+        left: 125vw;
+        top: 6vw;
+    }
+    .orbit_two img:nth-child(3){
+        width: 17vw;
+        height: 10.3vw;
+        left: 145.5vw;
+        top: 150vw;
+    }
+    
+    
+} 

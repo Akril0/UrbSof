@@ -1,0 +1,539 @@
+
+.container {
+	width: 87.5vw;
+	padding: 0 0px;
+	margin: 0 auto;
+}
+
+.popup{
+	visibility: hidden;
+	opacity: 0;
+	background: url('../img/Popup/popup-bg.png') no-repeat center center / 110% 100%;
+	position: fixed;
+	height: 100vh;
+	overflow: hidden;
+	width: 100vw;
+	transition-property: opacity, transform;
+	transform: translate(100%,0);
+	transition-duration: 0.5s;
+	z-index: 40;
+}
+
+.popup-thanks {
+	visibility: hidden;
+	opacity: 0;
+	background: url('../img/Popup/popup-bg.png') no-repeat center center / 110% 100%;
+	position: fixed;
+	height: 100vh;
+	overflow: hidden;
+	width: 100vw;
+	transition-property: opacity, transform;
+	transition-duration: 0.5s;
+	z-index: 40;
+	transform: scale(0.5);
+}
+
+.popup:after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100vw;
+	height: 56vw;
+	background: url('../img/Header/Clouds.png') no-repeat center top / 100% 150%;
+	mix-blend-mode: hard-light;
+	opacity: 0.4;
+	z-index: 1;
+}
+
+.popup-close{
+	display: flex;
+	padding-top: 1.8vw;
+	justify-content: end;
+	position: relative;
+	z-index: 5;
+	top:-1.25vw;
+	left: 3.2vw;
+	
+}
+.popup-close button{
+	transition: all 0.1s linear;
+}
+
+.popup-close button:hover {
+	opacity: .5;
+}
+.popup-close img {
+	width: 2.4vw;
+	height: 2.4vw;
+	display: block;
+	margin-left: auto;
+}
+.popup-boxes {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 9.4vw;
+	position: relative;
+}
+.popup-menu__item {
+	margin-bottom: 1.3vw;
+	display: block;
+	position: relative;
+	z-index: 2;
+}
+.popup-menu__link {
+	color: #fff;
+	font-weight: 400;
+	font-size: 1.6vw;
+	line-height: 2.3vw;
+	transition: all 0.1s linear;
+}
+.popup-menu__social{
+	transition: all 0.1s linear;
+}
+
+
+.popup-menu__link:hover,
+.popup-menu__social:hover {
+	background: linear-gradient(133.09deg, #004460 13.56%, #8731E0 14.84%, #FFDDF1 51.52%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+}
+.popup-menu__title {
+	color: rgba(255, 255, 255, .35);
+	font-size: 0.9vw;
+	font-weight: 400;
+}
+.popup-moon {
+	position: relative;
+	z-index: 3;
+}
+.popup-moon img {
+	display: block;
+	width: 14.9vw;
+	height: 14.9vw;
+}
+.popup-moon img {
+  animation: 35s linear 1s normal none infinite running rot;
+  -webkit-animation: 42s linear 1s normal none infinite running rot;
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.popup-moon:before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 19.5vw;
+	height: 19.5vw;
+	top: 50%;
+	margin-top: -9.7vw;
+	left: 50%;
+	margin-left: -9.7vw;
+	background: #F8FFFF;
+	opacity: 0.65;
+	filter: blur(20.8vw);
+	border-radius: 50%;
+	z-index: 2;
+}
+
+
+
+
+.popup-menu__social svg{
+	height: 1.1vw;
+	width: 1.1vw;
+}
+
+
+.popup-menu__social:nth-child(2){
+	position: relative;
+	top: 0.1vw;
+}
+
+.popup-menu__social:nth-child(3){
+	position: relative;
+	top: 0.1vw;
+}
+
+.popup-menu__social {
+	margin-right: 3.1vw;
+	color: #fff;
+	font-size: 0.78vw;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+/*страница благодарности*/
+
+.popup-thanks__text {
+	color: #fff;
+	font-weight: 400;
+	font-size: 34px;
+	text-align: center;
+	margin: 0 auto;
+	max-width: 490px;
+	padding-top: 150px;
+	line-height: 143%;
+	position: relative;
+}
+.popup-thanks__text:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: -30px;
+	left: -150px;
+	min-width: 740px;
+	width: 100%;
+	min-height: 740px;
+	height: 100%;
+	background: url('../img/Popup/popup-thanks.svg') no-repeat center center / cover;
+	z-index: 0;
+}
+
+.popup-moon__thanks {
+	position: absolute;
+	top: 80px;
+	right: 80px;
+}
+
+/*адаптив*/
+
+@media screen and (max-width: 1024px) {
+
+
+	.container {
+		width: 100vw;
+	}
+
+	.popup:after {
+		height: 66vw;
+		background: url('../img/Header/Clouds.png') no-repeat center top / 100% 100%;
+	}
+	
+	.popup-close{
+		padding-top: 2.34vw;
+		top: -1.8vw;
+		left:-1vw;
+	}
+
+	.popup-close img {
+		width: 4.2vw;
+		height: 4.2vw;
+	}
+	.popup-boxes {
+		display: flex;
+		justify-content: space-between;
+		padding-top: 9.4vw;
+	}
+
+	.popup-menu {
+		padding-inline-start: 1.75vw;
+  }
+	.popup-menu__item {
+		margin-bottom: 2.69vw;
+	}
+	.popup-menu__link {
+		font-size: 2.08vw;
+		line-height: 2.99vw;
+	}
+	
+	.popup-menu__title {
+		font-size: 1.7vw;
+	}
+
+	.popup-moon {
+		left: -1vw;
+		top: 3vw;
+	}
+
+	.popup-moon img {
+		width: 20.9vw;
+		height: 20.9vw;
+	}
+
+	
+	.popup-menu__social svg{
+		height: 1.8vw;
+		width: 1.8vw;
+	}
+	
+	
+	.popup-menu__social:nth-child(2){
+		position: relative;
+		top: 0.2vw;
+	}
+	
+	.popup-menu__social:nth-child(3){
+		position: relative;
+		top: 0.2vw;
+	}
+	
+	.popup-menu__social {
+		margin-right: 3.4vw;
+	}
+	
+	/*страница благодарности*/
+	
+	.popup-thanks__text {
+		color: #fff;
+		font-weight: 400;
+		font-size: 34px;
+		text-align: center;
+		margin: 0 auto;
+		max-width: 490px;
+		padding-top: 150px;
+		line-height: 143%;
+		position: relative;
+	}
+	.popup-thanks__text:before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: -30px;
+		left: -150px;
+		min-width: 740px;
+		width: 100%;
+		min-height: 740px;
+		height: 100%;
+		background: url('../img/Popup/popup-thanks.svg') no-repeat center center / cover;
+		z-index: 0;
+	}
+	
+	.popup-moon__thanks {
+		position: absolute;
+		top: 80px;
+		right: 80px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.container {
+		width: 100vw;
+	}
+	
+	.popup-close{
+		padding-top: 2.34vw;
+		top: -1.6vw;
+		left:-1vw;
+	}
+
+	.popup-close img {
+		width: 4.9vw;
+		height: 4.9vw;
+	}
+	.popup-boxes {
+		display: flex;
+		justify-content: space-between;
+		padding: 16.4vw 1.75vw 0;
+	}
+
+	.popup-menu {
+		padding-inline-start: 0vw;
+  }
+	.popup-menu__item {
+		margin-bottom: 4.84vw;
+	}
+	.popup-menu__link {
+		font-size: 3.74vw;
+		line-height: 2.99vw;
+	}
+	
+	.popup-menu__title {
+		font-size: 3.06vw;
+	}
+
+	.popup-moon {
+		position: absolute;
+		left: 77vw;
+		top: 3vw;
+	}
+
+	.popup-moon img {
+		width: 20.9vw;
+		height: 20.9vw;
+	}
+
+	
+	.popup-menu__social svg{
+		height: 3.24vw;
+		width: 3.24vw;
+	}
+	
+	
+	.popup-menu__social:nth-child(2){
+		position: relative;
+		top: 0.2vw;
+	}
+	
+	.popup-menu__social:nth-child(3){
+		position: relative;
+		top: 0.2vw;
+	}
+	
+	.popup-menu__social {
+		margin-right: 6.8vw;
+
+	}
+	
+	/*страница благодарности*/
+	
+	.popup-thanks__text {
+		color: #fff;
+		font-weight: 400;
+		font-size: 34px;
+		text-align: center;
+		margin: 0 auto;
+		max-width: 490px;
+		padding-top: 150px;
+		line-height: 143%;
+		position: relative;
+	}
+	.popup-thanks__text:before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: -30px;
+		left: -150px;
+		min-width: 740px;
+		width: 100%;
+		min-height: 740px;
+		height: 100%;
+		background: url('../img/Popup/popup-thanks.svg') no-repeat center center / cover;
+		z-index: 0;
+	}
+	
+	.popup-moon__thanks {
+		position: absolute;
+		top: 80px;
+		right: 80px;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	.container {
+		width: 100vw;
+	}
+	
+	.popup-close{
+		padding-top: 2.34vw;
+		top: -1.2vw;
+		left:-1.8vw;
+	}
+
+	.popup-close img {
+		width: 9.1vw;
+		height: 9.1vw;
+	}
+	.popup-boxes {
+		display: flex;
+		justify-content: space-between;
+		padding: 16.4vw 2.69vw 0;
+		flex-wrap: wrap;
+	}
+
+	.popup-menu {
+		padding-inline-start: 0vw;
+  }
+
+  .popup-menu:nth-child(-n+2) {
+	flex: 0 1 50%;
+	margin-bottom: 10vw;
+}
+
+	.popup-menu__item {
+		margin-bottom: 6.29vw;
+	}
+
+	.popup-menu__link {
+		font-size: 4.86vw;
+		line-height: 2.99vw;
+	}
+	
+	.popup-menu__title {
+		font-size: 3.97vw;
+	}
+
+	.popup-moon {
+		position: absolute;
+		left: 77vw;
+		top: 3vw;
+	}
+
+	.popup-moon img {
+		width: 20.9vw;
+		height: 20.9vw;
+	}
+
+	
+	.popup-menu__social svg{
+		height: 4.2vw;
+		width: 4.2vw;
+	}
+	
+	
+	.popup-menu__social:nth-child(2){
+		position: relative;
+		top: 0.2vw;
+	}
+	
+	.popup-menu__social:nth-child(3){
+		position: relative;
+		top: 0.2vw;
+	}
+	
+	.popup-menu__social {
+		margin-right: 8.64vw;
+
+	}
+	
+	/*страница благодарности*/
+	
+	.popup-thanks__text {
+		color: #fff;
+		font-weight: 400;
+		font-size: 34px;
+		text-align: center;
+		margin: 0 auto;
+		max-width: 490px;
+		padding-top: 150px;
+		line-height: 143%;
+		position: relative;
+	}
+	.popup-thanks__text:before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: -30px;
+		left: -150px;
+		min-width: 740px;
+		width: 100%;
+		min-height: 740px;
+		height: 100%;
+		background: url('../img/Popup/popup-thanks.svg') no-repeat center center / cover;
+		z-index: 0;
+	}
+	
+	.popup-moon__thanks {
+		position: absolute;
+		top: 80px;
+		right: 80px;
+	}
+}
+
